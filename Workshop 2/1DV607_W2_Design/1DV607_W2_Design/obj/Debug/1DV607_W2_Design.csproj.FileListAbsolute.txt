@@ -1,0 +1,6 @@
+C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\1DV607_W2_Design\bin\Debug\1DV607_W2_Design.exe.config
+C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.csprojResolveAssemblyReference.cache
+C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\1DV607_W2_Design\bin\Debug\1DV607_W2_Design.exe
+C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\1DV607_W2_Design\bin\Debug\1DV607_W2_Design.pdb
+C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.exe
+C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.pdb
