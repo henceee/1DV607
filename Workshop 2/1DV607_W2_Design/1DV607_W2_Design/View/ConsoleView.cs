@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1DV607_W2_Design.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,55 +9,30 @@ namespace _1DV607_W2_Design.View
 {
     class ConsoleView
     {
-        public enum Event
-        {
-            None,
-            Quit,
-            CreateMember,
-            CreateBoat,
-
-
-        }
-
         /// <summary>
-        /// 
-        /// </summary>
-        public void PresentInstructions()
-        {
-            System.Console.Clear();
-            System.Console.WriteLine("\tWelcome! \nUse the numberkeys to choose action: \n0: Quit\n1:View Member Details \n");
-           
-
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public Event getEvent()
-        {
-            char pressedKey = Console.ReadKey().KeyChar;
-
-            switch(pressedKey)
-            {
-                case '0': return Event.Quit;
-                case '1': return Event.CreateMember;
-                default: return Event.None;
-            }
-            
-        }
-
-        /// <summary>
-        /// 
+        /// Gets input from user
         /// </summary>
         /// <param name="message"></param>
         /// <returns></returns>
         public string getStrInput(string message)
         {
-            System.Console.Clear();
-            Console.WriteLine(message);
-                       
+            ShowMessage(message,true);            
+                      
             return Console.ReadLine();
+        }
+
+        /// <summary>
+        /// Presents message to user.
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="shouldClear"></param>
+        public void ShowMessage(string message, bool shouldClear=false)
+        {
+            if (shouldClear)
+            {
+                Console.Clear();
+            }
+           Console.WriteLine("\n{0}",message);
         }
     }
 }

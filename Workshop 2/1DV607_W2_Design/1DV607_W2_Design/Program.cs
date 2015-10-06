@@ -10,14 +10,16 @@ namespace _1DV607_W2_Design
 {
     class Program
     {
+        /// <summary>
+        /// Initializes the application, 
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
-        {
-            View.ConsoleView view = new View.ConsoleView();
-            Controller.MemberController memberController = new Controller.MemberController(view);
+        {  
+            Controller.App app = new Controller.App();
             
-            while (memberController.startApp());
-
-            
+            while (app.startApp());
+                        
         }
     }
 }

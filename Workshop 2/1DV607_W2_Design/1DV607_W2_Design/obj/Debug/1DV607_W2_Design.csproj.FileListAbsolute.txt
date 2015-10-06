@@ -4,3 +4,16 @@ C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\
 C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\1DV607_W2_Design\bin\Debug\1DV607_W2_Design.pdb
 C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.exe
 C:\Users\Hence\Documents\GitHub\vt14-2-2-aventyrliga-kontakter\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.pdb
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\bin\Debug\1DV607_W2_Design.exe.config
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\bin\Debug\1DV607_W2_Design.exe.manifest
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\bin\Debug\1DV607_W2_Design.application
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\bin\Debug\1DV607_W2_Design.exe
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\bin\Debug\1DV607_W2_Design.pdb
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\_1DV607_W2_Design.Properties.directorieStrs.resources
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\_1DV607_W2_Design.Properties.actions.resources
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\_1DV607_W2_Design.Properties.messages.resources
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.csproj.GenerateResource.Cache
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.exe.manifest
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.application
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.exe
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.pdb

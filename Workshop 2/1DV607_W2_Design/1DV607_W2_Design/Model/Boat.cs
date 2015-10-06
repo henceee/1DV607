@@ -9,56 +9,85 @@ namespace _1DV607_W2_Design.Model
 {
     class Boat
     {
-
+        /// <summary>
+        /// Valid types of boat
+        /// </summary>
         public enum Type
         {
-            Sailboat,
-            Motorsailer,
-            Canoe,
-            Kayak,
-            Other
+            sailboat,
+            motorsailer,
+            canoe,
+            kayak,
+            other,
+            None
+        }
+               
+        /// <summary>
+        /// FIELDS
+        /// </summary>
+        double _length;
+        Type _boatType;
+        
+        /// <summary>
+        /// Property to get and set _length
+        /// </summary>
+        public double Length
+        {
+            get { return _length; }
+            set { _length = value; }
         }
 
-        double _length;
-        Type _type;
+        /// <summary>
+        /// Property to get and set _boatType if valid type.
+        /// </summary>
+        public Type BoatType
+        {
+            get { return _boatType; }
+            set 
+            {
+                if(value.GetType() == typeof(Type))
+                {
+                    _boatType = value; 
+                }
+                else
+                {
+                    throw new ArgumentException();
+                }
+                
+            }
+        }
 
         /// <summary>
-        /// 
+        ///  Constructor for 0 args.
         /// </summary>
         /// <param name="length"></param>
         /// <param name="boatType"></param>
-        public Boat(double length, Type boatType)
+        public Boat()
         {
-            _length = length;
-            _type = boatType;
+            //empty.
         }
-
         /// <summary>
-        /// 
+        ///  Constructor sets params to properties.
         /// </summary>
-        /// <returns></returns>
-        public Type getBoatType()
+        /// <param name="length"></param>
+        /// <param name="boatType"></param>
+        public Boat(double length,Type boatType)
         {
-            return _type;
+            Length = length;
+            BoatType = boatType;
+            
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public double getLength()
-        {
-            return _length;
-        }
-
-        /// <summary>
-        /// 
+        /// Returns string representation of boat object.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
         {
-            return Regex.Replace(String.Format("{0} {1}", _length, _type).Trim(), @"\s{2,}", " ");
+            // Removes leading and traling white spaces and then replaces consecutive white spaces with a single white space.
+            return Regex.Replace(String.Format("Boat:\nLength: {0} Feet\nType: {1}\n", _length, _boatType).Trim(), @"\s{2,}", " ");
         }
-      
+
+        
     }
 }
