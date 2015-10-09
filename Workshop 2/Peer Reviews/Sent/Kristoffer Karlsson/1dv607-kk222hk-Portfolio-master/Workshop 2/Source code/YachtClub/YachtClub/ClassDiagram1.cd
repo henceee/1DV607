@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="YachtClub.controller.HandleBoats" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAACAACAAAA=</HashCode>
+      <FileName>controller\HandleBoats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.controller.HandleMembers" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAQAAAAgAAAAAQAAAAAEAABACBAAAAAgACAAEAAIA=</HashCode>
+      <FileName>controller\HandleMembers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.model.Boat" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAgAAAAAAAAAAAAABAAAgQAAAAAAAAAAAACAA=</HashCode>
+      <FileName>model\Boat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.model.Member" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAIAIAAAAAAAAAAAAAQAaQAAQAAAECAAAAACAAAQAA=</HashCode>
+      <FileName>model\Member.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.model.MemberList" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAgAAAAAACAAoAIAAAAAAAEAQACAAA=</HashCode>
+      <FileName>model\MemberList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.model.DAL.MemberDAL" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>model\DAL\MemberDAL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.RunYachtClub" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>RunYachtClub.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.view.BaseView" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAgACAAAAACQAAAIAIAAAgAAEE=</HashCode>
+      <FileName>view\BaseView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.view.BoatView" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAgAAAAAAAgAAAAAAAAIAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>view\BoatView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.view.MemberListView" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAQAAAAAAAIA=</HashCode>
+      <FileName>view\MemberListView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YachtClub.view.MemberView" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAADAIAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>view\MemberView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="YachtClub.model.BoatCategory" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>model\BoatCategory.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="YachtClub.model.DAL.LoadStatus" Collapsed="true">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>model\DAL\MemberDAL.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
