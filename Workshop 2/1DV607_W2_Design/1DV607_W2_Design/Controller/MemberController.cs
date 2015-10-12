@@ -20,6 +20,9 @@ namespace _1DV607_W2_Design.Controller
         private IReadOnlyCollection<Member> _members;
         private MainMenuView _mainMenu;
         private EditUpdateMenu _editUpdateMenu;
+        private MemberView _memberView;
+        private BoatView _boatView;
+        
         /// <summary>
         /// Constructor, creates new instances of necessary objects
         /// save them to fields 
@@ -32,6 +35,9 @@ namespace _1DV607_W2_Design.Controller
             _editUpdateMenu = editUpdateMenu;
             _memberDAL = new MemberDAL(directorieStrs.MemberListPath);
             _members = new List<Member>();
+            _boatView = new BoatView();   
+            _memberView = new MemberView(_boatView);            
+            
         }
         /// <summary>
         /// Loads data from text file, saves readonlycollection
@@ -50,27 +56,36 @@ namespace _1DV607_W2_Design.Controller
             string firstName;
             string lastName;
             string personalNumber;
-            
-            firstName = _mainMenu.getStrInput(messages.firstNameInput);
-            lastName = _mainMenu.getStrInput(messages.lastNameInput);
-            personalNumber = _mainMenu.getStrInput(messages.pNumberInput);
+            Member member = null;
 
-            try
+            do
             {
-                Member member = new Model.Member(firstName, lastName, personalNumber);
-                saveMember(member);
+                firstName = _mainMenu.getStrInput(messages.firstNameInput);
+                lastName = _mainMenu.getStrInput(messages.lastNameInput);
+                personalNumber = _mainMenu.getStrInput(messages.pNumberInput);
+
+                try
+                {
+                    member = new Model.Member(firstName, lastName, personalNumber);
+                    saveMember(member);
+                    _mainMenu.ShowMessage(messages.memberCreated);
+                    _mainMenu.ShowMessage(messages.returnStr);
+                    goBack();
+                }
+                catch (Exception)
+                {
+                    _mainMenu.ShowMessage(string.Format("{0}{1}",messages.invalidInput, messages.memberNotCreated));
+                    continue;
+                }
             }
-            catch (Exception)
-            {
-                _mainMenu.ShowMessage(messages.invalidInput);
-            }
+            while (member == null);
         }
         /// <summary>
         /// Handles user inputed action for editing member.
         /// </summary>
         public void editMember()
         {
-            _editUpdateMenu.ShowMessage(messages.chooseMember, true);
+            _editUpdateMenu.ShowMessage(messages.chooseMember,true);
             Member member = chooseMember();
 
             _editUpdateMenu.PresentInstructions();
@@ -115,7 +130,7 @@ namespace _1DV607_W2_Design.Controller
         public void viewMember()
         {
             Member member = chooseMember();
-            _mainMenu.ShowMessage(member.ToString(), true);
+            _memberView.viewMemberVerbose(member);
             goBack();
         }
         /// <summary>
@@ -125,12 +140,7 @@ namespace _1DV607_W2_Design.Controller
         public void showCompactList()
         {
             _mainMenu.ShowMessage(messages.compactStr, true);
-
-            foreach (Member member in _members)
-            {
-                _mainMenu.ShowMessage(member.compactToString());
-
-            }
+            _memberView.viewCompactList(_members);
             _mainMenu.ShowMessage(messages.returnStr);
             goBack();
         }
@@ -139,14 +149,9 @@ namespace _1DV607_W2_Design.Controller
         ///  using view.
         /// </summary>     
         public void showVerboseList()
-        {
+        {   
             _mainMenu.ShowMessage(messages.verboseStr, true);
-
-            foreach (Member member in _members)
-            {
-                _mainMenu.ShowMessage(member.ToString());
-
-            }
+            _memberView.viewVerboseList(_members);            
             _mainMenu.ShowMessage(messages.returnStr);
             goBack();
         }
@@ -158,7 +163,7 @@ namespace _1DV607_W2_Design.Controller
         private Member chooseMember()
         {
             //Present all members...
-            _editUpdateMenu.ShowMembers(_members);
+            _memberView.chooseMemberList(_members);
             // and get user to choose member.
             Member member = null;
             do
@@ -197,21 +202,21 @@ namespace _1DV607_W2_Design.Controller
         private void addBoat(Member member)
         {
             //Create new boat..
-            Boat b = new Boat();
+            Boat boat = new Boat();
             double length;
             //Delete the current info about the member
             _memberDAL.Delete(member);
             //Get the type of the boat, set it to new boat.
-            Boat.Type boatType = _editUpdateMenu.chooseBoatType();
+            Boat.Type boatType = _boatView.chooseBoatType();
             //Get the length of the boat, set it to new boat.
             string lengthInput = _editUpdateMenu.getStrInput(messages.inputLength);
             try
             {
                 double.TryParse(lengthInput, out length);
-                b.BoatType = boatType;
-                b.Length = length;
+                boat.BoatType = boatType;
+                boat.Length = length;
                 //add boat to the member.
-                member.add(b);
+                member.add(boat);
                 //save member
                 saveMember(member);
                 _editUpdateMenu.ShowMessage(messages.boatCreated);
@@ -241,7 +246,7 @@ namespace _1DV607_W2_Design.Controller
         private Boat chooseBoat(Member member)
         {
             //Present all boats...
-            _editUpdateMenu.showBoats(member);           
+            _boatView.chooseBoatList(member.Boats);           
             //and get user to choose boat.
             int index = _editUpdateMenu.getIndexFomInput();
             return member.Boats.ElementAt(index);
@@ -255,11 +260,16 @@ namespace _1DV607_W2_Design.Controller
         {
             //Delete the current info about the member
             _memberDAL.Delete(member);
-            //choose the boat to remove..
-            Boat b = chooseBoat(member);
-            //remove it and save!
-            member.remove(b);
-            saveMember(member);
+            if (member.getNumberOfBoats() > 0)
+            {
+                //choose the boat to remove..
+                Boat boat = chooseBoat(member);
+                //remove it and save!
+                member.remove(boat);
+                saveMember(member);
+            }
+            _editUpdateMenu.ShowMessage(messages.returnStr);
+            goBack();
         }
         /// <summary>
         /// Presents message using view, checks if user wishes to return
@@ -274,8 +284,6 @@ namespace _1DV607_W2_Design.Controller
             }
         }
 
-        
-        
     }
 
 }

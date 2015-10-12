@@ -1,50 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="_1DV607_W2_Design.Controller.App">
-    <Position X="5.5" Y="5.75" Width="1.5" />
+    <Position X="4" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAABAAAAAAACAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Controller\App.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.Controller.MemberController">
-    <Position X="4.75" Y="0.5" Width="1.5" />
+    <Position X="6.5" Y="7.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAAAIhCEAAAAAQBAAAAAAAAIAACQAJIAABABIACAAAA=</HashCode>
+      <HashCode>BAAAIhCEAAABAQBAAAAAAAAIAACQAJIAABABIACCAAA=</HashCode>
       <FileName>Controller\MemberController.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_1DV607_W2_Design.Model.Boat">
-    <Position X="6.75" Y="0.5" Width="1.5" />
-    <Compartments>
-      <Compartment Name="Nested Types" Collapsed="false" />
-    </Compartments>
-    <NestedTypes>
-      <Enum Name="_1DV607_W2_Design.Model.Boat.Type">
-        <TypeIdentifier>
-          <NewMemberFileName>Model\Boat.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAABAAAAAAAAABIAAAAAEAAA=</HashCode>
-      <FileName>Model\Boat.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="_1DV607_W2_Design.Model.Member">
-    <Position X="10.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAECIEAAAAAAgAAEAAFBAAAAAQQAAAAAAAAAAAACACg=</HashCode>
-      <FileName>Model\Member.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="_1DV607_W2_Design.DAL.MemberDAL">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="9.75" Y="0.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <NestedTypes>
-      <Enum Name="_1DV607_W2_Design.DAL.MemberDAL.MemberReadStatus">
+      <Enum Name="_1DV607_W2_Design.DAL.MemberDAL.MemberReadStatus" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>DAL\MemberDAL.cs</NewMemberFileName>
         </TypeIdentifier>
@@ -55,15 +31,46 @@
       <FileName>DAL\MemberDAL.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="_1DV607_W2_Design.Model.Boat">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="_1DV607_W2_Design.Model.Boat.Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\Boat.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAABIAAAAAEAAA=</HashCode>
+      <FileName>Model\Boat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1DV607_W2_Design.Model.Member">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAIEAAAAAAgAAEAAFBAAAAAQQAAAAAAAAAAAACACg=</HashCode>
+      <FileName>Model\Member.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1DV607_W2_Design.View.BoatView">
+    <Position X="2.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>View\BoatView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="_1DV607_W2_Design.View.ConsoleView">
-    <Position X="1.75" Y="2" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>View\ConsoleView.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.View.EditUpdateMenu">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Position X="7.25" Y="4" Width="1.5" />
     <NestedTypes>
       <Enum Name="_1DV607_W2_Design.View.EditUpdateMenu.Event" Collapsed="true">
         <TypeIdentifier>
@@ -72,12 +79,12 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAABACCAAAAAAAAAAgIAAAgA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAACAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>View\EditUpdateMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.View.MainMenuView">
-    <Position X="3" Y="4.25" Width="1.5" />
+    <Position X="0.5" Y="4" Width="1.5" />
     <NestedTypes>
       <Enum Name="_1DV607_W2_Design.View.MainMenuView.Event" Collapsed="true">
         <TypeIdentifier>
@@ -88,6 +95,13 @@
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>View\MainMenuView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_1DV607_W2_Design.View.MemberView">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAABAgAAAAAAAACAAAAAAAAAABAAAAAAAAg=</HashCode>
+      <FileName>View\MemberView.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

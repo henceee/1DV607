@@ -89,8 +89,7 @@ namespace _1DV607_W2_Design.DAL
                         sr.WriteLine("{0};{1}", boat.Length, "Feet");
                         sr.WriteLine("{0}",     sectionType);
                         sr.WriteLine("{0}",     boat.BoatType.ToString());
-                    }
-                                
+                    }                                
                 }
             }
         }
@@ -184,11 +183,11 @@ namespace _1DV607_W2_Design.DAL
 
                         case MemberReadStatus.Type:
 
-                            foreach (Boat.Type t in Enum.GetValues(typeof(Boat.Type)))
+                            foreach (Boat.Type type in Enum.GetValues(typeof(Boat.Type)))
                             {
-                                if (Enum.GetName(typeof(Boat.Type),t) == line)
+                                if (Enum.GetName(typeof(Boat.Type),type) == line)
                                 {
-                                    boat.BoatType = t;
+                                    boat.BoatType = type;
                                 }
                             }
                             continue;

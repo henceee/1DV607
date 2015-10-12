@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="1DV607_W2_Design.exe" size="24576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="1DV607_W2_Design.exe" size="25088">
       <assemblyIdentity name="1DV607_W2_Design" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>L+m7sbLjdLr7aPHPPOUtxCD01acWCMoQFhRE28SWrjc=</dsig:DigestValue>
+        <dsig:DigestValue>3xs5hpm7Bqr1kLtdzliaMdINCjiFERNcceYpo7SS74o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,13 +62,13 @@
       <dsig:DigestValue>fzxBSr45tumrN8SNWWL0IeqRlxoh8+san/F4n6/GZJ4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="App_Data\MemberList.txt" size="255">
+  <file name="App_Data\MemberList.txt" size="471">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>eq8129k9LA2okfubLeVMvdp6pbCAG1FUTmDAWQlMz7k=</dsig:DigestValue>
+      <dsig:DigestValue>4k+z5QE2kZNIIlHZKffZ/DAxZDaQldGt47NCtAF/0M4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

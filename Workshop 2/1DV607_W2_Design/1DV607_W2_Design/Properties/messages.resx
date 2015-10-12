@@ -168,4 +168,10 @@
   <data name="boatCreated" xml:space="preserve">
     <value>Boat created!</value>
   </data>
+  <data name="memberCreated" xml:space="preserve">
+    <value>MemberCreated!</value>
+  </data>
+  <data name="memberNotCreated" xml:space="preserve">
+    <value>member could not be created.</value>
+  </data>
 </root>

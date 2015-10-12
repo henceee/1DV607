@@ -20,7 +20,6 @@ namespace _1DV607_W2_Design.View
                       
             return Console.ReadLine();
         }
-
         /// <summary>
         /// Presents message to user.
         /// </summary>

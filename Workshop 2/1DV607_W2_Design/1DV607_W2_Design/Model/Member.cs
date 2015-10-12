@@ -89,8 +89,7 @@ namespace _1DV607_W2_Design.Model
         {
             get { return _boats.AsReadOnly(); }
             
-        }
-        
+        }        
         /// <summary>
         /// Constructor for no params, creates list of boats
         /// </summary>
@@ -122,7 +121,6 @@ namespace _1DV607_W2_Design.Model
             ID = Guid.NewGuid().ToString();
 
         }
-
         /// <summary>
         /// Add boat to list _boats.
         /// </summary>
@@ -148,34 +146,6 @@ namespace _1DV607_W2_Design.Model
         {
             return _boats.Count;
         }
-        /// <summary>
-        /// Returns string representation of member
-        /// as compact list (first & lastname, personal no., no. of boats)
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="personalNumber"></param>
-        public string compactToString()
-        {
-            return string.Format("ID:{0}\nName:{1} {2}\n{3}\n\nNo. of boats:{4}\n", ID, FirstName, LastName, PersonalNumber, Boats.Count());
-        }
-        /// <summary>
-        /// Returns string representation of member
-        /// as verbose list (first & lastname, personal no.,string representation of boat(s))
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            string boats ="";
-
-            foreach (Boat boat in _boats)
-            {
-                boats += boat.ToString();
-            }
-
-            return string.Format("ID:{0}\nName:{1} {2}\n{3}\n{4}\n", ID, FirstName, LastName,PersonalNumber, boats);
-        }
-
-
-       
+              
     }
 }

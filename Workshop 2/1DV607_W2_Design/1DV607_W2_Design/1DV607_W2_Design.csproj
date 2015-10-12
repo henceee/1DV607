@@ -91,9 +91,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>messages.resx</DependentUpon>
     </Compile>
+    <Compile Include="View\BoatView.cs" />
     <Compile Include="View\ConsoleView.cs" />
     <Compile Include="View\EditUpdateMenu.cs" />
     <Compile Include="View\MainMenuView.cs" />
+    <Compile Include="View\MemberView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\ClassDiagram.cd" />
@@ -101,6 +103,8 @@
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ClassDiagram6.cd" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\directorieStrs.resx">

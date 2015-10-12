@@ -55,43 +55,6 @@ namespace _1DV607_W2_Design.View
             
         }
         /// <summary>
-        /// Presents compact list of member info.
-        /// </summary>
-        /// <param name="members"></param>
-        internal void ShowMembers(IReadOnlyCollection<Member> members)
-        {
-            ShowMessage(messages.chooseMember, true);
-
-            int i = -1;
-            foreach (Member member in members)
-            {
-                i++;
-                ShowMessage(string.Format("{0}.{1}", i, member.compactToString()));
-            }
-        }        
-        /// <summary>
-        /// Choose boat type, if can be parsed to proper type, return type.
-        /// </summary>
-        /// <returns>Boat.Type boatType</returns>
-        internal Boat.Type chooseBoatType()
-        {            
-            ShowMessage(messages.specType,true);
-            Boat.Type boatType =Boat.Type.None;
-
-            string rl = Console.ReadLine();
-            foreach (Boat.Type t in Enum.GetValues(typeof(Boat.Type)))
-            {
-                if (Enum.GetName(typeof(Boat.Type), t) == rl)
-                {
-                    boatType = t;
-                    break;
-                }
-            }
-           
-            return boatType;
-
-        }
-        /// <summary>
         /// Presents actions to user.
         /// Edit Member Info,Add Boat, Edit Boat, Delete Boat, return.
         /// </summary>
@@ -101,21 +64,8 @@ namespace _1DV607_W2_Design.View
                         messages.chooseAction,actions.actionEditMemberInfo, actions.actionAddBoat,
                         actions.actionEditBoat, actions.actionDeleteBoat, messages.returnStr), true);
         }
-        /// <summary>
-        /// Presents list of boats to user.
-        /// </summary>
-        /// <param name="member"></param>
-        internal void showBoats(Member member)
-        {
-            ShowMessage(messages.chooseBoat,true);
-
-            int i = -1;
-            foreach (Boat b in member.Boats)
-            {
-                i++;
-                ShowMessage(string.Format("{0}.{1}", i,b.ToString()));
-            }
-                        
-        }
+      
+       
+        
     }
 }

@@ -17,3 +17,4 @@ C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Des
 C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.application
 C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.exe
 C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.pdb
+C:\Users\Hence\Documents\GitHub\1DV607\Workshop 2\1DV607_W2_Design\1DV607_W2_Design\obj\Debug\1DV607_W2_Design.csprojResolveAssemblyReference.cache

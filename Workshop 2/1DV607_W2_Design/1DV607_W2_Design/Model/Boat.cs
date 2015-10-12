@@ -76,18 +76,7 @@ namespace _1DV607_W2_Design.Model
             Length = length;
             BoatType = boatType;
             
-        }
-
-        /// <summary>
-        /// Returns string representation of boat object.
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            // Removes leading and traling white spaces and then replaces consecutive white spaces with a single white space.
-            return Regex.Replace(String.Format("Boat:\nLength: {0} Feet\nType: {1}\n", _length, _boatType).Trim(), @"\s{2,}", " ");
-        }
-
+        }      
         
     }
 }

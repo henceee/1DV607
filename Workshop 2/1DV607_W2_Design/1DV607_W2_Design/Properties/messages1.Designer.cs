@@ -151,6 +151,24 @@ namespace _1DV607_W2_Design.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MemberCreated!.
+        /// </summary>
+        internal static string memberCreated {
+            get {
+                return ResourceManager.GetString("memberCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to member could not be created..
+        /// </summary>
+        internal static string memberNotCreated {
+            get {
+                return ResourceManager.GetString("memberNotCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Index does not exist..
         /// </summary>
         internal static string nonExistantIndex {
