@@ -89,7 +89,9 @@ namespace _1DV607_W2_Design.Model
         {
             get { return _boats.AsReadOnly(); }
             
-        }        
+        }
+
+         
         /// <summary>
         /// Constructor for no params, creates list of boats
         /// </summary>

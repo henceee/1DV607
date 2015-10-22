@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="_1DV607_W2_Design.Controller.App">
-    <Position X="4.75" Y="9.5" Width="1.5" />
+    <Position X="8.25" Y="11.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAABAAAAAAACAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Controller\App.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="_eView" />
       <Field Name="_mainMenu" />
+      <Field Name="_eView" />
       <Field Name="_memberController" />
     </ShowAsAssociation>
   </Class>
   <Class Name="_1DV607_W2_Design.Controller.MemberController">
-    <Position X="1.75" Y="9" Width="1.5" />
+    <Position X="1.75" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAIhCEAAABAQBAAAAAAAAIAACQAJIAABABIACCAAA=</HashCode>
       <FileName>Controller\MemberController.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="_editUpdateMenu" />
-      <Field Name="_boatView" />
       <Field Name="_memberDAL" />
       <Field Name="_mainMenu" />
+      <Field Name="_editUpdateMenu" />
       <Field Name="_memberView" />
+      <Field Name="_boatView" />
     </ShowAsAssociation>
   </Class>
   <Class Name="_1DV607_W2_Design.DAL.MemberDAL">
-    <Position X="13.25" Y="1" Width="1.5" />
+    <Position X="16.75" Y="1" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -44,7 +44,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.Model.Boat">
-    <Position X="11.5" Y="1" Width="1.5" />
+    <Position X="15" Y="1" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -61,28 +61,32 @@
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.Model.Member">
-    <Position X="15" Y="0.75" Width="1.5" />
+    <Position X="18.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAIEAAAAAAgAAEAAFBAAAAAQQAAAAAAAAAAAACACg=</HashCode>
       <FileName>Model\Member.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.View.BoatView">
-    <Position X="2.5" Y="3" Width="1.5" />
+    <Position X="6.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>View\BoatView.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.View.ConsoleView">
-    <Position X="3.75" Y="0.5" Width="1.5" />
+    <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>View\ConsoleView.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.View.EditUpdateMenu">
-    <Position X="7.25" Y="3.5" Width="1.5" />
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <NestedTypes>
       <Enum Name="_1DV607_W2_Design.View.EditUpdateMenu.Event" Collapsed="true">
         <TypeIdentifier>
@@ -96,9 +100,12 @@
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.View.MainMenuView">
-    <Position X="0.5" Y="3" Width="1.5" />
+    <Position X="4.25" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <NestedTypes>
-      <Enum Name="_1DV607_W2_Design.View.MainMenuView.Event" Collapsed="true">
+      <Enum Name="_1DV607_W2_Design.View.MainMenuView.Event">
         <TypeIdentifier>
           <NewMemberFileName>View\MainMenuView.cs</NewMemberFileName>
         </TypeIdentifier>
@@ -110,7 +117,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="_1DV607_W2_Design.View.MemberView">
-    <Position X="5" Y="3.25" Width="1.5" />
+    <Position X="8.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAABAgAAAAAAAACAAAAAAAAAABAAAAAAAAg=</HashCode>
       <FileName>View\MemberView.cs</FileName>
