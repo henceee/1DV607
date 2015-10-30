@@ -1,0 +1,12 @@
+C:\Users\BasseLaptop\Dropbox\Skola\Objektorienterad analys och design\Workshop 3\blackjack_csharp-master\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\BasseLaptop\Dropbox\Skola\Objektorienterad analys och design\Workshop 3\blackjack_csharp-master\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\BasseLaptop\Dropbox\Skola\Objektorienterad analys och design\Workshop 3\blackjack_csharp-master\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\BasseLaptop\Dropbox\Skola\Objektorienterad analys och design\Workshop 3\blackjack_csharp-master\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\BasseLaptop\Dropbox\Skola\Objektorienterad analys och design\Workshop 3\blackjack_csharp-master\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\BasseLaptop\Dropbox\Skola\Objektorienterad analys och design\Workshop 3\Workshop 3\blackjack_csharp-master\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\BasseLaptop\Dropbox\Skola\Objektorienterad analys och design\Workshop 3\Workshop 3\blackjack_csharp-master\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\Hence\Desktop\Sebastian, Lindblad BlackJack\obj\Debug\BlackJack.exe
+C:\Users\Hence\Desktop\Sebastian, Lindblad BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\Hence\Desktop\Sebastian, Lindblad BlackJack\bin\Debug\BlackJack.exe
+C:\Users\Hence\Desktop\Sebastian, Lindblad BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\Hence\Desktop\Sebastian, Lindblad BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache

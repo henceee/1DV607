@@ -1,0 +1,20 @@
+C:\Users\jopes\Documents\GitHub\blackjack_csharp\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\jopes\Documents\GitHub\blackjack_csharp\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\jopes\Documents\GitHub\blackjack_csharp\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\jopes\Documents\GitHub\blackjack_csharp\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\jopes\Documents\GitHub\blackjack_csharp\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\juan\Desktop\Johannas skola\blackjack_csharp\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\juan\Desktop\Johannas skola\blackjack_csharp\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\juan\Desktop\Johannas skola\blackjack_csharp\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\juan\Desktop\Johannas skola\blackjack_csharp\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\juan\Desktop\Johannas skola\blackjack_csharp\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\Matilda\Documents\GitHub\blackjack_csharp\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\Matilda\Documents\GitHub\blackjack_csharp\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\Matilda\Documents\GitHub\blackjack_csharp\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\Matilda\Documents\GitHub\blackjack_csharp\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\Matilda\Documents\GitHub\blackjack_csharp\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\Hence\Desktop\Johnny Pesola blackjack_csharp-0.001\blackjack_csharp-0.001\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\Hence\Desktop\Johnny Pesola blackjack_csharp-0.001\blackjack_csharp-0.001\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\Hence\Desktop\Johnny Pesola blackjack_csharp-0.001\blackjack_csharp-0.001\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\Hence\Desktop\Johnny Pesola blackjack_csharp-0.001\blackjack_csharp-0.001\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\Hence\Desktop\Johnny Pesola blackjack_csharp-0.001\blackjack_csharp-0.001\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
