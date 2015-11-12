@@ -13,40 +13,29 @@ namespace BlackJack.model
         private rules.INewGameStrategy m_newGameRule;
         private rules.IHitStrategy m_hitRule;
         private IWinRuleStrategy m_winRule;
-
-        public bool Stand()
-        {
-            if(m_deck != null)
-            {
-                ShowHand();                               
-                do
-                {
-                    GetShowAndDealCard(this, true);
-                  /*  Card card = m_deck.GetCard();
-                    card.Show(true);
-                    DealCard(card);                      */
-
-                }
-                while (m_hitRule.DoHit(this));                               
-            }
-            return m_hitRule.DoHit(this);            
-        }
+        private List<NewCardObserver> m_observers;
 
         public Dealer(rules.RulesFactory a_rulesFactory)
         {
             m_newGameRule = a_rulesFactory.GetNewGameRule();
             m_hitRule = a_rulesFactory.GetHitRule();
             m_winRule = a_rulesFactory.GetWinRule();
+            m_observers = new List<NewCardObserver>();
         }
 
-        public bool NewGame(Player a_player)
+        public void AddSubscribers(NewCardObserver a_sub)
+        {
+            m_observers.Add(a_sub);
+        }
+
+         public bool NewGame(Player a_player)
         {
             if (m_deck == null || IsGameOver())
             {
                 m_deck = new Deck();
                 ClearHand();
                 a_player.ClearHand();
-                return m_newGameRule.NewGame(m_deck, this, a_player);   
+                return m_newGameRule.NewGame(this, a_player);   
             }
             return false;
         }
@@ -55,12 +44,7 @@ namespace BlackJack.model
         {
             if (m_deck != null && a_player.CalcScore() < g_maxScore && !IsGameOver())
             {
-                GetShowAndDealCard(a_player, true);
-                /*Card c;
-                c = m_deck.GetCard();
-                c.Show(true);
-                a_player.DealCard(c);*/
-
+                ShowDealACard(true, a_player);
                 return true;
             }
             return false;
@@ -68,7 +52,7 @@ namespace BlackJack.model
 
         public bool IsDealerWinner(Player a_player)
         {
-            return m_winRule.IsDealerWinner(this, a_player,g_maxScore);
+            return m_winRule.IsDealerWinner(this, a_player, g_maxScore);
         }
 
         public bool IsGameOver()
@@ -80,12 +64,29 @@ namespace BlackJack.model
             return false;
         }
 
-        public void GetShowAndDealCard(Player player, bool show)
+        public void Stand()
+        {
+            if (m_deck != null)
+            {
+                ShowHand();
+                while (m_hitRule.DoHit(this))
+                {
+                    ShowDealACard(true, this);
+                }
+            }
+        }
+
+        public void ShowDealACard(bool show, Player player)
         {
             Card card = m_deck.GetCard();
             card.Show(show);
-            player.DealCard(card);                      
+            player.DealCard(card);
 
+            foreach (NewCardObserver observer in m_observers)
+            {
+                observer.newCardGiven();
+            }
         }
-    }
+    }    
+    
 }

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace BlackJack.controller
 {
@@ -11,22 +12,21 @@ namespace BlackJack.controller
     {
         private Game a_game;
         private IView a_view;
-        private bool b_suspense = false;
 
         public PlayGame(Game game, IView view)
         {
             a_game = game;
             a_view = view;
-            a_game.AddSubsribers(this);
+
+            a_game.AddSubscribers(this);
         }
 
         public bool Play()
         {
-           a_view.DisplayWelcomeMessage();
-           a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore(),b_suspense);
-           a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore(),b_suspense);
-           b_suspense = false;
-
+            a_view.DisplayWelcomeMessage();         
+            a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
+            a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
+           
             if (a_game.IsGameOver())
             {
                 a_view.DisplayGameOver(a_game.IsDealerWinner());
@@ -37,13 +37,13 @@ namespace BlackJack.controller
             switch (e)
             {
                 case Event.newgame:
-                    a_game.NewGame();
+                    a_game.NewGame();                   
                     break;
                 case Event.hit:
                     a_game.Hit();
                     break;
                 case Event.stand:
-                    a_game.Stand();
+                        a_game.Stand();
                     break;
                 case Event.quit:
                     return false;
@@ -53,8 +53,11 @@ namespace BlackJack.controller
         }
 
         public void newCardGiven()
-        {   
-            b_suspense = true;  
+        {
+            a_view.DisplayWelcomeMessage();
+            a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
+            a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
+            Thread.Sleep(500);
         }
     }
 }

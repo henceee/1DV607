@@ -20,25 +20,21 @@ namespace BlackJack.view
             System.Console.WriteLine("{0} of {1}", a_card.GetValue(), a_card.GetColor());
         }
 
-        public void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score, bool b_suspense)
+        public void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score)
         {
-            DisplayHand("Player", a_hand, a_score, b_suspense);
+            DisplayHand("Player", a_hand, a_score);
         }
 
-        public void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score, bool b_suspense)
+        public void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score)
         {
-            DisplayHand("Dealer", a_hand, a_score, b_suspense);
+            DisplayHand("Dealer", a_hand, a_score);
         }
 
-        private void DisplayHand(String a_name, IEnumerable<model.Card> a_hand, int a_score,bool b_suspense)
+        private void DisplayHand(String a_name, IEnumerable<model.Card> a_hand, int a_score)
         {
             System.Console.WriteLine("{0} Has: ", a_name);
             foreach (model.Card c in a_hand)
             {
-                if (b_suspense)
-                {
-                    System.Threading.Thread.Sleep(2000);
-                }
                 DisplayCard(c);
             }
             System.Console.WriteLine("Score: {0}", a_score);

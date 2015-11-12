@@ -30,13 +30,13 @@ namespace BlackJack.view
                 System.Console.WriteLine("{0} {1}", colors[(int)a_card.GetColor()], values[(int)a_card.GetValue()]);
             }
         }
-        public void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score, bool b_suspense)
+        public void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score)
         {
-            DisplayHand("Spelare", a_hand, a_score, b_suspense);
+            DisplayHand("Spelare", a_hand, a_score);
         }
-        public void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score, bool b_suspense)
+        public void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score)
         {
-            DisplayHand("Croupier", a_hand, a_score,b_suspense);
+            DisplayHand("Croupier", a_hand, a_score);
         }
         public void DisplayGameOver(bool a_dealerIsWinner)
         {
@@ -51,16 +51,11 @@ namespace BlackJack.view
             }
         }
 
-        private void DisplayHand(String a_name, IEnumerable<model.Card> a_hand, int a_score, bool b_suspense)
+        private void DisplayHand(String a_name, IEnumerable<model.Card> a_hand, int a_score)
         {
             System.Console.WriteLine("{0} Has: ", a_name);
             foreach (model.Card c in a_hand)
             {
-                if (b_suspense)
-                {
-                    System.Threading.Thread.Sleep(2000);
-                }
-                
                 DisplayCard(c);
             }
             System.Console.WriteLine("Score: {0}", a_score);

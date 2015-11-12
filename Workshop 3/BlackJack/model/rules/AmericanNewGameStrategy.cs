@@ -5,14 +5,14 @@ using System.Text;
 
 namespace BlackJack.model.rules
 {
-    class AmericanNewGameStrategy : GetShowAndDeal, INewGameStrategy
+    class AmericanNewGameStrategy : INewGameStrategy
     {
-        public bool NewGame(Deck a_deck, Dealer a_dealer, Player a_player)
+        public bool NewGame(Dealer a_dealer, Player a_player)
         {
-            getShowAndDealCard(a_deck, true, a_player);
-            getShowAndDealCard(a_deck,true,a_dealer);
-            getShowAndDealCard(a_deck, true, a_player);
-            getShowAndDealCard(a_deck, false, a_dealer);
+            a_dealer.ShowDealACard(true, a_player);
+            a_dealer.ShowDealACard(true, a_dealer);
+            a_dealer.ShowDealACard(true, a_player);
+            a_dealer.ShowDealACard(false, a_dealer);
           
             return true;
         }
