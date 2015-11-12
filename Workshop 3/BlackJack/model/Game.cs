@@ -49,7 +49,7 @@ namespace BlackJack.model
 
         public bool Hit()
         {
-            notifyObserver();        
+           // notifyObserver();        
             return m_dealer.Hit(m_player);
         }
 

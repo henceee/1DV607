@@ -21,9 +21,10 @@ namespace BlackJack.model
                 ShowHand();                               
                 do
                 {
-                    Card card = m_deck.GetCard();
+                    GetShowAndDealCard(this, true);
+                  /*  Card card = m_deck.GetCard();
                     card.Show(true);
-                    DealCard(card);                      
+                    DealCard(card);                      */
 
                 }
                 while (m_hitRule.DoHit(this));                               
@@ -54,10 +55,11 @@ namespace BlackJack.model
         {
             if (m_deck != null && a_player.CalcScore() < g_maxScore && !IsGameOver())
             {
-                Card c;
+                GetShowAndDealCard(a_player, true);
+                /*Card c;
                 c = m_deck.GetCard();
                 c.Show(true);
-                a_player.DealCard(c);
+                a_player.DealCard(c);*/
 
                 return true;
             }
@@ -76,6 +78,14 @@ namespace BlackJack.model
                 return true;
             }
             return false;
+        }
+
+        public void GetShowAndDealCard(Player player, bool show)
+        {
+            Card card = m_deck.GetCard();
+            card.Show(show);
+            player.DealCard(card);                      
+
         }
     }
 }
